@@ -1,0 +1,116 @@
+name: Emre Ates
+
+Address: 25 Parkman St. Apt. 2 Brookline MA 02446 USA
+
+Phone: +1 857 540 8435 
+mail: ates@bu.edu 
+
+Research Interests
+
+Monitoring and Management of Large Scale Systems, 
+Computer Architecture, Cloud Computing, HPC 
+
+Education
+
+Boston University 
+2015 - Present
+PhD in Computer Engineering
+GPA: 3.94
+	Advisor: Prof. Ayse Kivilcim Coskun
+  Electrical and Computer Engineering Dept. 
+
+Middle East Technical University (METU)
+2010 - 2015
+B.S. in Electrical and Electronics Engineering
+GPA: 3.23, Ranking: 37th among 353
+	Minor in History of Philosophy
+  GPA: 3.50
+
+Tampere University of Technology
+2013
+	Erasmus Exchange Student
+
+Research Experience
+
+Peac Lab Research Group
+Research Assistant
+Boston, MA
+September 2015 -- present
+	Researched on data center monitoring and analytics, interference in HPCs and
+  cloud systems 
+
+BioMEMS Research Group
+Voluntary Research Assistant
+Ankara, TURKEY
+June 2014 -- June 2015
+	Improved sensing circuity of a MEMS based Coulter counter. Helped prepare
+  the second generation for manufacture 
+
+Qualifications
+
+Programming Languages: Verilog, Assembly, C, Cplusplus, Java, Python,
+Perl, Bash, MatLab
+
+Software Tools: OpenStack, Cadence Virtuoso Design Platform, National
+Instruments LabVIEW, Slurm, \LaTeX
+
+Languages: English (fluent), Turkish (native), German (intermediate),
+Finnish (beginner) 
+
+Internships
+
+Sandia National Laboratories
+Internship
+Albuquerque, NM
+Summer 2016
+	Analyzed system monitoring data to automatically detect and classify
+  anomalies in HPC clusters.
+  Investigated allocation and task mapping algorithms for dragonfly systems.
+
+ASELSAN AS (Military Electronic Industries)
+Internship
+Ankara, TURKEY
+Summer 2013
+	Improved an existing synthetic aperture radar simulation in MATLAB, reducing
+  the complexity and operation time to make 3D simulations feasible, and
+  implemented the 3D simulation 
+
+Teaching Experience
+
+Applied Algorithms and Data Stuctures 
+Graduate Teaching Assistant
+Boston University
+Spring 2016, Fall 2016
+	Held a weekly discussion session that I prepared, checked the exams and
+  homeworks for errors before they were handed out, coordinated the graders
+  and other TAs. 
+
+Awards and Scholarships
+
+A. Richard Newton Young Fellowship DAC
+June 2015
+  Student fellowship to attend the 53rd Design Automation Conference
+
+Distinguished ECE Fellowship Boston University
+September 2015 - September 2016
+	Includes full tuition coverage with monthly stipend
+
+Honor Roll METU
+June 2015
+	Graduated from METU Electrical and Electronics Engineering Department with
+  Honors 
+
+Analog Electronics Laboratory Best Project Award METU
+Fall 2012
+	For designing the best AC/DC converter using only transistors and diodes as
+  active components 
+
+Bulent Kerim Altay Award METU
+Spring 2011
+	For achieving 4.0 GPA
+
+Cousework in BU
+
+Advanced Data Structures, Computer Architecture, Advanced Digital Design with
+Verilog and FPGA, Cloud Computing, Introduction to Embedded Systems, Data
+Mining, Operating Systems
