@@ -229,9 +229,7 @@
 \def\@linename{\begingroup
   \def\\{, }
   {\namefont\@name}
-  \vskip 2pt
-  \fullline
-  \vskip 2pt
+  % \hfill
   % where do you live?
   \@ifundefined{@addressone}{%
     % do nothing
@@ -242,6 +240,9 @@
 		  }%
       }\par
   }
+  \vskip 2pt
+  \fullline
+  \vskip 2pt
 \endgroup}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
