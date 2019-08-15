@@ -2,6 +2,10 @@ body {
     color: #373D3F;
 }
 
+strong {
+    color: #EB4747;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
