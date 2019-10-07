@@ -51,6 +51,11 @@ The content `<div>` is where all your content goes.
     line-height: 1.6em;
 }
 
+.with-sidebar {
+    display: flex;
+    flex-direction: row;
+}
+
 .header {
      margin: 0;
      color: rgb(31, 31, 31);
