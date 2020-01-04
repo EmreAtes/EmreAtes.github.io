@@ -22,12 +22,13 @@
 
 \documentclass{resume}
 
-\usepackage[left=0.75in,top=0.7in,right=0.75in,bottom=0.7in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{hyperref}
 \hypersetup{backref,pdfpagemode=Full,colorlinks=false,backref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \def\Cplusplus{{\rm C\raise.25ex\hbox{\small ++}}}
+\def\bfCplusplus{{\rm{\bf C\raise.25ex\hbox{\small ++}}}}
 \name{Emre Ate\c{s}}
 \address{Boston, MA}
 \address{(+1) 857 540 8435 \\ \href{mailto:ates@bu.edu}{ates@bu.edu} \\ \url{https://emreates.github.io}}
@@ -72,29 +73,42 @@ Software \& Tools & git, gdb, OpenStack, scikit-learn, Vowpal Wabbit, Autotools,
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{PeacLab Research Group}{September 2015 -- present}{Research
-    Assistant}{Boston, MA}
+\begin{rWorksection}{Boston University, PeacLab}{Fall 2015 -- present}{Research Assistant}
 \item Researched on improving large-scale computing systems using advanced
-  analytics approaches. Research topics: data center monitoring and analytics
-  using machine learning, end-to-end tracing of distributed applications,
-  machine learning on filesystem changes.
-\end{rSubsection}
+  analytics approaches.
+  % Topics:
+  % \begin{itemize}
+  % \item Data center monitoring and analytics using machine learning,
+  % \item End-to-end tracing of distributed applications,
+  % \item Machine learning on filesystem changes.
+  % \end{itemize}
+\end{rWorksection}
 
-\begin{rSubsection}{Google LLC}{Spring 2019}{Software Engineering
-    Internship}{New York, NY}
-\item As part of the Google Wide Profiling team, implemented multiple heuristics
-  within the memory allocator, TCMalloc. Implemented collection of metrics from
-  TCMalloc users, built a simulator pipeline to compare various heuristics.
-  {\bf Technologies/languages:} C\plusplus, Flume.
-\end{rSubsection}
+\begin{rWorksection}{Google, NYC}{Spring 2019}{Software Engineering
+    Internship}
+\item As part of the Google Wide Profiling team,
+  \begin{list}{$\cdot$}{\leftmargin=2em} % \cdot used for bullets, no indentation
+    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  \item Implemented multiple heuristics in {\bf \bfCplusplus{}} within the memory
+    allocator, TCMalloc.
+  \item Implemented collection of metrics from TCMalloc users using {\bf
+      \bfCplusplus{}, Go}.
+  \item Built a simulator pipeline using {\bf \bfCplusplus{}, Flume} to compare
+    various heuristics.
+  \end{list}
+\end{rWorksection}
 
-\begin{rSubsection}{Lawrence Livermore National Laboratory}{Summer
-    2017}{Research Internship}{Livermore, CA}
-\end{rSubsection}
+\begin{rWorksection}{Lawrence Livermore National Laboratory}{Summer
+    2017}{Research Internship}
+\item Ran comprehensive benchmarks in supercomputers on the effects of
+  power/network on performance using {\bf Bash, Python}.
+\end{rWorksection}
 
-\begin{rSubsection}{Sandia National Laboratories}{Summer 2016}{Research
-    Internship}{Albuquerque, NM}
-\end{rSubsection}
+\begin{rWorksection}{Sandia National Laboratories}{Summer 2016}{Research
+    Internship}
+\item Studied network contention on application performance for HPC systems
+  using {\bf MPI}.
+\end{rWorksection}
 
 \end{rSection}
 
@@ -102,16 +116,24 @@ Software \& Tools & git, gdb, OpenStack, scikit-learn, Vowpal Wabbit, Autotools,
 %	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Selected Projects} % \itemsep -2pt
-\item {\bf HPC Performance Anomaly Diagnosis:} Developed an HPC performance
-  interference suite, collected numeric time series data from supercomputers,
-  built a supervised learning pipeline to detect performance anomalies using the
-  time series data. {\bf Technologies/languages:} C, Python, scikit-learn,
-  Tensorflow.
-\item {\bf Distributed Tracing:} Extended existing distributed tracing for
-  OpenStack, built a graph processing pipeline in Rust to explore
-  instrumentation options in response to ongoing performance problems. {\bf
-    Technologies/languages:} Rust, Python, OpenStack.
+\begin{rSection}{Selected Academic Projects} \itemsep -2pt
+\item {\bf HPC Performance Anomaly Diagnosis:}
+  \begin{list}{$\cdot$}{\leftmargin=2em} % \cdot used for bullets, no indentation
+    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  \item Developed an HPC performance interference generation suite in {\bf C},
+  \item Collected numeric time series data from supercomputers,
+  \item Built a supervised learning pipeline in {\bf Python} to detect
+    performance anomalies using the time series data using {\bf scikit-learn,
+      Tensorflow}.
+  \end{list}
+  \item {\bf Distributed Tracing on the Cloud:}
+  \begin{list}{$\cdot$}{\leftmargin=2em} % \cdot used for bullets, no indentation
+    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  \item Extended existing distributed tracing for {\bf OpenStack} using {\bf
+      Python},
+  \item Built a graph processing pipeline in {\bf Rust} to explore
+    instrumentation options in response to ongoing performance problems.
+  \end{list}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
