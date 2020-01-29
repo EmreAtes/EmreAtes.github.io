@@ -24,14 +24,22 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
 \hypersetup{backref,pdfpagemode=Full,colorlinks=false,backref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \def\Cplusplus{{\rm C\raise.25ex\hbox{\small ++}}}
 \def\bfCplusplus{{\rm{\bf C\raise.25ex\hbox{\small ++}}}}
+
+
+\fancypagestyle{plain}{
+\fancyfoot[r]{Page \thepage \hspace{1pt} of \pageref{LastPage}}}
+\pagestyle{plain}
+
 \name{Emre Ate\c{s}}
-\address{Boston, MA}
-\address{(857) 540-8435 \\ \href{mailto:ates@bu.edu}{ates@bu.edu} \\ \url{https://emreates.github.io}}
+\address{(857) 540-8435 \\ \href{mailto:ates@bu.edu}{ates@bu.edu} \\
+  \href{https://emreates.github.io}{https://emreates.github.io}}
 
 \begin{document}
 
@@ -41,18 +49,19 @@
 
 \begin{rSection}{Education}
 
-\begin{rSubsection}{Boston University}{2015 - Summer 2020 (Expected)}{PhD in
-    Computer Engineering (Advisor: Prof. Ay\c{s}e K. Co\c{s}kun)}{GPA: 3.93}
+\begin{rSubsection}{Boston University}{Expected Summer 2020}{PhD in
+    Computer Engineering (Advisor: Prof. Ay\c{s}e K. Co\c{s}kun)}{GPA: 3.93 / 4.0}
 \item \textbf{Thesis title:} Towards automated analytics on large-scale
   computing systems
 \item \textbf{Coursework:} Data Structures and Algorithms, Computer
-  Architecture, Data Mining, Operating Systems, Cybersecurity, Computer Systems,
-  Digital Design, Embedded Systems
+  Architecture, Data Mining, \\
+  Operating Systems, Cybersecurity, Computer Systems, Digital Design, Embedded
+  Systems
 \end{rSubsection}
 
-\begin{rSubsectionNoList}{Middle East Technical University (METU), Turkey}{2010 -
-    2015}{BSc in Electrical and Electronics Engineering, Minor in History of
-    Philosophy}{GPA: 3.23, top 10\%}
+\begin{rSubsectionNoList}{Middle East Technical University (METU),
+    Turkey}{Spring 2015}{BSc in Electrical and Electronics Engineering}{GPA:
+    3.23 / 4.0, top 10\%}{Minor in History of Philosophy}
 \end{rSubsectionNoList}
 
 \end{rSection}
@@ -60,7 +69,7 @@
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Strengths}
+\begin{rSection}{Technical Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Languages & {\em (proficient:)} C, \Cplusplus, Python, Rust, Bash, {\em (familiar:)} SQL, R, Java, Perl \\
@@ -73,52 +82,58 @@ Software \& Tools & git, gdb, OpenStack, scikit-learn, Vowpal Wabbit, Autotools,
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
-
-\begin{rWorksection}{Boston University, PeacLab}{Fall 2015 -- present}{Research Assistant}
-\item Designed software frameworks for improving supercomputers and cloud
-  computing systems using data-intensive methods and machine learning. Selected
-  projects:
-\item {\bf HPC Performance Analytics:}
-  \begin{rList}
-  \item Developed an HPC performance interference generation suite in {\bf C},
-  \item Built a supervised learning framework in {\bf Python} using {\bf
-      MongoDB, scikit-learn, TensorFlow} that collects numeric time series data
-    from supercomputers, and detects performance anomalies, running
-    applications, or cryptocurrency mining.
-  \end{rList}
-\item {\bf Distributed Tracing on the Cloud:}
-  \begin{rList}
-  \item Extended existing distributed tracing for {\bf OpenStack} using {\bf
-      Python, Redis},
-  \item Built a graph processing pipeline in {\bf Rust} to explore
-    instrumentation options in response to ongoing performance problems.
-  \end{rList}
-\end{rWorksection}
+\begin{rSection}{Work Experience}
 
 \begin{rWorksection}{Google, NYC}{Spring 2019}{Software Engineering
     Internship}
-\item As part of the Google Wide Profiling team:
-  \begin{rList}
-  \item Implemented multiple heuristics in {\bf \bfCplusplus{}} within the memory
-    allocator, TCMalloc.
-  \item Implemented collection of metrics from TCMalloc users using {\bf
-      \bfCplusplus{}, Go}.
-  \item Built a simulator pipeline using {\bf SQL, \bfCplusplus{}, Flume} to
-    compare various heuristics.
-  \end{rList}
+\item Implemented multiple heuristics in {\bf \bfCplusplus{}} within the memory
+  allocator, TCMalloc.
+\item Implemented collection of metrics from TCMalloc users using {\bf
+    \bfCplusplus{}, Go}.
+\item Built a simulator pipeline using {\bf SQL, \bfCplusplus{}, Flume} to
+  compare various heuristics.
+\item Improved the performance of a major Google service in data center-scale tests.
 \end{rWorksection}
 
 \begin{rWorksection}{Lawrence Livermore National Laboratory}{Summer
     2017}{Research Internship}
-\item Ran comprehensive benchmarks in supercomputers on the effects of
-  power/network on performance using {\bf Bash, Python}.
+\item Measured performance effects of power/network on supercomputers using {\bf
+    Bash} and {\bf Python}.
+\item Improved compatibility of power measurement {\bf kernel module} for the
+  latest version of Linux.
+\end{rWorksection}
+
+\begin{rWorksection}{Boston University}{Spring 2016, Fall 2016}
+    {Head Teaching Assistant}
+\item Held weekly discussion sessions, wrote homework solutions for Applied
+  Algorithms and Data Structures.
 \end{rWorksection}
 
 \begin{rWorksection}{Sandia National Laboratories}{Summer 2016}{Research
     Internship}
 \item Studied network contention on application performance for HPC systems
   using {\bf MPI}.
+\end{rWorksection}
+
+\end{rSection}
+
+\begin{rSection}{Select Projects}
+
+\begin{rWorksection}{HPC Performance Analytics}{2015 -- present}{Boston
+    University \& Sandia National Labs}
+\item Developed an HPC performance interference generation suite in {\bf C}.
+\item Built a supervised learning framework in {\bf Python} using {\bf MongoDB,
+    scikit-learn, TensorFlow} that collects numeric time series data from
+  supercomputers, and detects performance anomalies, running applications, or
+  cryptocurrency mining.
+\end{rWorksection}
+
+\begin{rWorksection}{Distributed Tracing on the Cloud}{2017 -- present}{Boston
+    University \& RedHat}
+\item Extended existing distributed tracing for {\bf OpenStack} using {\bf
+    Python, Redis}.
+\item Built a graph processing pipeline in {\bf Rust} to explore
+  instrumentation options in response to ongoing performance problems.
 \end{rWorksection}
 
 \end{rSection}
@@ -166,36 +181,31 @@ Frankfurt, 2017.
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Other} \itemsep -3pt
-\item {\bf Awards and Fellowships:}
-  \begin{rList}
-  \item Best Artifact Award at EuroPar'18,
-  \item Gauss Center for Supercomputing Award at ISC-HPC'17,
-  \item A. Richard Newton Young Fellowship at DAC'16,
-  \item Distinguished ECE Fellowship from Boston University,
-  \item Analog Electronics Laboratory Best Project Award at METU.
-  \end{rList}
-\item {\bf Teaching:}
-  \begin{rList}
-  \item {\bf Head Teaching Assistant} for Applied Algorithms and Data Structures
-    at Boston University (Spring 2016, Fall 2016). Held weekly discussion
-    sessions, graded exams/assignments, coordinated the graders.
-  \item {\bf Instructor} for BU Summer Challenge (2018). Taught introductory
-    electrical engineering to high school students.
-  \end{rList}
-\item {\bf Open Source Projects:}
-  \begin{rList}
-  \item \url{https://github.com/peaclab/hpas},
-  \item \url{https://doi.org/10.6084/m9.figshare.6384248},
-  \item \url{https://github.com/uuid-rs/uuid-gdb}
-  \end{rList}
-\item {\bf Student Volunteer:} At SC'17 and SoCC'19.
-\item {\bf Pianist} (2010 - 2015) and {\bf musical director} (2012 - 2013) of
-  METU Musical Society \\
-  Led a team of 12 instrumentalists, and trained 14 actors to stage multiple
-  Broadway musicals in METU, collaborating with professionals from all branches
-  of show business, and a technical crew of 30
+\begin{rSection}{Awards and Fellowships} \itemsep -3pt
+  \item Best Artifact Award at EuroPar'18
+  \item Gauss Center for Supercomputing Award at ISC-HPC'17
+  \item A. Richard Newton Young Fellowship at DAC'16
+  \item Distinguished ECE Fellowship from Boston University
+  \item Analog Electronics Laboratory Best Project Award at METU
+\end{rSection}
 
+\begin{rSection}{Activities}
+  \begin{rWorksectionNoList}{Student Volunteer}{November 2019}{Symposium on Cloud
+      Computing (SoCC)}
+  \end{rWorksectionNoList}
+
+  \begin{rWorksectionNoList}{Student Volunteer}{October 2017}{International
+      Conference for High Performance Computing, Networking, Storage and
+      Analysis (SC)}
+  \end{rWorksectionNoList}
+
+  \begin{rWorksection}{Musical Director and Pianist}{2010 -- 2015}{
+      METU Musical Society}
+  \item Led a team of 12 instrumentalists, and trained 14 actors to stage
+    multiple Broadway musicals.
+  \item Collaborated with professionals from all branches of show business, and
+    a technical crew of 30.
+  \end{rWorksection}
 \end{rSection}
 
 \end{document}
