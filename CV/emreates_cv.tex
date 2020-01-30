@@ -22,7 +22,7 @@
 
 \documentclass{resume}
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=1in]{geometry} % Document margins
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -33,15 +33,18 @@
 \def\bfCplusplus{{\rm{\bf C\raise.25ex\hbox{\small ++}}}}
 
 
-\fancypagestyle{plain}{
-\fancyfoot[r]{Page \thepage \hspace{1pt} of \pageref{LastPage}}}
-\pagestyle{plain}
+\fancypagestyle{empty}{
+\fancyhf{}
+\renewcommand{\headrule}{}
+\fancyfoot[r]{Emre Ates \\ Page \thepage \hspace{1pt} of \pageref{LastPage}}}
+\pagestyle{empty}
 
 \name{Emre Ate\c{s}}
 \address{(857) 540-8435 \\ \href{mailto:ates@bu.edu}{ates@bu.edu} \\
   \href{https://emreates.github.io}{https://emreates.github.io}}
 
 \begin{document}
+% \thispagestyle{plain}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -86,12 +89,10 @@ Software \& Tools & git, gdb, OpenStack, scikit-learn, Vowpal Wabbit, Autotools,
 
 \begin{rWorksection}{Google, NYC}{Spring 2019}{Software Engineering
     Internship}
-\item Implemented multiple heuristics in {\bf \bfCplusplus{}} within the memory
+\item Implemented data collection and heuristics in {\bf \bfCplusplus{}, Go} within the memory
   allocator, TCMalloc.
-\item Implemented collection of metrics from TCMalloc users using {\bf
-    \bfCplusplus{}, Go}.
 \item Built a simulator pipeline using {\bf SQL, \bfCplusplus{}, Flume} to
-  compare various heuristics.
+  compare heuristics.
 \item Improved the performance of a major Google service in data center-scale tests.
 \end{rWorksection}
 
@@ -199,13 +200,19 @@ Frankfurt, 2017.
       Analysis (SC)}
   \end{rWorksectionNoList}
 
-  \begin{rWorksection}{Musical Director and Pianist}{2010 -- 2015}{
+  \begin{rWorksection}{Musical Director}{2012 -- 2013}{
       METU Musical Society}
   \item Led a team of 12 instrumentalists, and trained 14 actors to stage
     multiple Broadway musicals.
   \item Collaborated with professionals from all branches of show business, and
     a technical crew of 30.
   \end{rWorksection}
+
+  \begin{rWorksectionNoList}{Pianist}{2015 -- 2018}{Boston University Big Band}
+  \end{rWorksectionNoList}
+
+  \begin{rWorksectionNoList}{Pianist}{2010 -- 2015}{METU Musical Society}
+  \end{rWorksectionNoList}
 \end{rSection}
 
 \end{document}
